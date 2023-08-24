@@ -7,6 +7,6 @@ case "$chosen" in
 	"  Reboot") reboot ;;
 	"  Suspend") systemctl suspend ;;
 	"  Logout") bspc quit ;;
-	"󰌾  Lock") light-locker-command -l ;;
+	"󰌾  Lock") betterlockscreen -l ;;
 	*) exit 1 ;;
 esac

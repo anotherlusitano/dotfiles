@@ -13,7 +13,7 @@ bspc config borderless_monocle   true
 bspc config gapless_monocle      true
 
 # Terminate already running instances
-processes=("picom" "polybar" "sxhkd" "dunst" "light-locker")
+processes=("picom" "polybar" "sxhkd" "dunst")
 
 for process in "${processes[@]}"; do
   if pidof -q "$process"; then
@@ -32,9 +32,6 @@ dunst &
 
 # Launch picom 
 picom &
-
-# Launch screen locker
-light-locker &
 
 # Set wallpaper
 feh --bg-scale ~/.config/bspwm/wallpapers/tk_s2_ep11.jpg
