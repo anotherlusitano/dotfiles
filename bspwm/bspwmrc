@@ -34,4 +34,4 @@ dunst &
 picom &
 
 # Set wallpaper
-feh --bg-scale ~/.config/bspwm/wallpapers/tk_s2_ep11.jpg
+feh --bg-fill --randomize ~/.config/bspwm/wallpapers/
