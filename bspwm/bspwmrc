@@ -40,5 +40,8 @@ dunst &
 # Launch picom 
 picom &
 
+# Launch emacs daemon
+/usr/bin/emacs --daemon &
+
 # Set wallpaper
 feh --bg-fill --randomize ~/.config/bspwm/wallpapers/
