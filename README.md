@@ -1,6 +1,4 @@
 # :warning: Work in Progress :warning:
-There are some things that will be changed and improved.
-This will not work if you copy the dotfiles(yet).
 
 ## Info
 
