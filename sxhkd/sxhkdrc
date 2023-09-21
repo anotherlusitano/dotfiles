@@ -18,6 +18,18 @@ super + shift + x
 super + f
 	firefox
 
+# screen shot whole area
+@Print
+  scrot - | xclip -selection clipboard -target image/png
+
+# screen shot selected area
+@shift + Print
+  scrot --select - | xclip -selection clipboard -target image/png
+
+# screen shot focused area
+@ctrl + Print
+  scrot --focused - | xclip -selection clipboard -target image/png
+
 # change wallpaper
 super + alt + w
   feh --bg-fill --randomize ~/.config/bspwm/wallpapers/
