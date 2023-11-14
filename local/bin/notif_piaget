@@ -1,0 +1,4 @@
+#! /bin/sh
+notifications=$(piaget-cli -un);
+echo "$notifications"
+
