@@ -2,12 +2,12 @@
 
 pgrep -x sxhkd > /dev/null || sxhkd &
 
-bspc monitor -d 1 2 3 4
+bspc monitor eDP-1 -d ג ד ה ₪
 
 bspc config border_width         2
 bspc config window_gap		12
 
-bspc config focused_border_color "#74C7F6"
+bspc config focused_border_color "#CD15E4"
 bspc config split_ratio          0.52
 bspc config borderless_monocle   true
 bspc config gapless_monocle      true
@@ -15,12 +15,14 @@ bspc config gapless_monocle      true
 #rules
 bscp rule -r "*"
 bspc rule -a mpv state=fullscreen
+bspc rule -a vlc state=fullscreen
 bspc rule -a Emacs state=tiled
 bspc rule -a firefox:Places state=floating rectangle=800x600+560+240
 bspc rule -a firefox:Toolkit state=floating sticky=on
+#bspc rule -a firefox:Navigator state=floating
 
 # Terminate already running instances
-processes=("picom" "polybar" "sxhkd" "dunst")
+processes=("picom" "polybar" "sxhkd" "dunst" "arRPC" "chronium" "chromedriver")
 
 for process in "${processes[@]}"; do
   if pidof -q "$process"; then
@@ -44,4 +46,10 @@ picom &
 /usr/bin/emacs --daemon &
 
 # Set wallpaper
-feh --bg-fill --randomize ~/.config/bspwm/wallpapers/
+feh --bg-fill ~/.config/bspwm/wallpapers/denji_and_nuclear_bomb.jpg
+
+# Fix cursor
+xsetroot -cursor_name left_ptr
+
+# Launch arRPC server
+arRPC
