@@ -11,3 +11,7 @@
 |Aur Helper|[yay](https://github.com/Jguer/yay)|
 
 <br>
+
+# Screenshots
+
+![image](screenshots/ilikelinux.png)
