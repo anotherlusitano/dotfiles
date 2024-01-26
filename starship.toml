@@ -1,0 +1,16 @@
+scan_timeout = 10
+
+format = "$directory$git_branch$character"
+add_newline = false
+line_break.disabled = true
+directory.style = "#0c63b2"
+directory.truncation_length = 3
+directory.read_only = ''
+
+[character]
+success_symbol = "[ ](#ec9929)"
+error_symbol = "[ ](red)"
+
+[git_branch]
+style = "purple"
+symbol = ""
