@@ -1,4 +1,4 @@
-# :warning: Work in Progress :warning:
+# My dotfiles
 
 ## Info
 
