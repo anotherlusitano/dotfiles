@@ -1,4 +1,11 @@
 #! /bin/sh
-notifications=$(piaget-cli -un);
-echo "$notifications"
-
+while true; do
+  pkill -9 chromedriver
+  pkill -9 chromium
+  wait
+  notifications=$(piaget-cli -un)
+  if [[ $notifications =~ ^[0-9]+$ ]] && [ $notifications -gt 0 ]; then
+    notify-send $notifications' notifications from Piaget' 'You got a new notification from Piaget' --icon=piaget
+  fi
+  sleep 30m
+done
