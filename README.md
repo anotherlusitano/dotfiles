@@ -2,16 +2,19 @@
 
 ## Info
 
-|WM|[bspwm](https://github.com/baskerville/bspwm)|
-|:---:|:---:|
-|Bar|[Polybar](https://github.com/polybar/polybar)|
-|Menu|[Rofi](https://github.com/davatorium/rofi)|
-|Compositor|[Picom](https://github.com/yshui/picom)|
-|Terminal|[Alacritty](https://github.com/alacritty/alacritty)|
-|Aur Helper|[yay](https://github.com/Jguer/yay)|
+|      WM       |         [Hyprland](https://github.com/hyprwm/Hyprland)         |
+| :-----------: | :------------------------------------------------------------: |
+|      Bar      |          [Waybar](https://github.com/Alexays/Waybar)           |
+|     Menu      |             [Wofi](https://hg.sr.ht/~scoopta/wofi)             |
+| Notifications | [Swaync](https://github.com/ErikReider/SwayNotificationCenter) |
+| Screen Locker |        [Hyprlock](https://github.com/hyprwm/hyprlock/)         |
+|  Logout Menu  |        [Wlogout](https://github.com/ArtsyMacaw/wlogout)        |
+|   Wallpaper   |             [swww](https://github.com/LGFae/swww)              |
+|   Terminal    |          [Kitty](https://github.com/kovidgoyal/kitty)          |
+|  Aur Helper   |              [yay](https://github.com/Jguer/yay)               |
 
 <br>
 
 # Screenshots
 
-![image](screenshots/ilikelinux.png)
+![image](screenshots/image.png)
